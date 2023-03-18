@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* #nav-bar {
+  position: sticky;
+  z-index: 10;
+  width: auto;
+  height: 10vh;
+}
+@media screen and (max-width: 576px) {
+  * #nav-bar {
+    width: auto;
+    height: auto;
+  }
+}
+* #nav-bar .navbar {
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+  padding: 0 !important;
+}
+@media screen and (max-width: 576px) {
+  * #nav-bar .navbar {
+    width: auto;
+    height: auto;
+  }
+}
+* #nav-bar .navbar .navbar-toggler {
+  border: none;
+  color: #5f1782;
+}
+* #nav-bar .navbar .fa-bars {
+  color: #fff;
+  font-size: 2.2rem;
+  margin-right: 3rem;
+  height: auto;
+}
+* #nav-bar .navbar .navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-left: 3rem;
+  text-decoration: none;
+  font-style: italic;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 10s steps(40, end) forwards infinite;
+}
+@keyframes typing {
+  70% {
+    width: 100px;
+    color: blue;
+    font-weight: bold;
+  }
+  100% {
+    width: 300px;
+    color: gold;
+    font-weight: bold;
+  }
+}
+* #nav-bar .navbar .navbar-nav {
+  margin-left: auto;
+  margin-right: 5rem;
+  float: right;
+  align-items: end;
+}
+* #nav-bar .navbar .navbar-nav .nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+* .king {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+* .king #pix {
+  border: 1px solid;
+  border-radius: 100%;
+  margin-left: 40px;
+  margin-top: -10rem;
+  width: auto;
+  box-shadow: 4px 6px 8px 9px grey;
+}
+@media screen and (max-width: 576px) {
+  * .king #pix {
+    width: 250px;
+    height: 200px;
+    margin-top: 22rem;
+    margin-left: 4rem;
+  }
+}
+* .king .crux {
+  margin-top: 4rem;
+}
+* .king .crux ul {
+  font-size: 20px;
+  margin-left: 2rem;
+  margin-top: 100px;
+  background-color: grey;
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 2px 1px 3px #a517ba;
+}
+@media screen and (max-width: 576px) {
+  * .king .crux ul {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+  }
+}
+* .king .crux .fa-arrow-down-long {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+* .king .crux h1 {
+  text-align: center;
+  margin-left: 10px;
+  color: #a517ba;
+}
+@media screen and (max-width: 576px) {
+  * .king .crux h1 {
+    margin-top: 1rem;
+  }
+}
+* .king .crux h1::before {
+  content: "";
+  background-color: black;
+  width: 15rem;
+  height: 0.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(54px);
+}
+@media screen and (max-width: 576px) {
+  * .king .crux h1::before {
+    height: 0.1rem;
+  }
+}
+* .king .crux h1::after {
+  content: "";
+  background-color: black;
+  width: 6rem;
+  height: 0.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 3.5px;
+}
+@media screen and (max-width: 600px) {
+  * .king .crux h1::after {
+    display: grid;
+    transform: translateY(11.5px);
+    height: 0.4rem;
+  }
+}
+* .king #pics {
+  width: 350px;
+  height: 350px;
+  margin-top: 6rem;
+  margin-left: 8rem;
+  margin-right: 5rem;
+  box-shadow: 4px 6px 8px 10px grey;
+  border-radius: 100px;
+  animation: names 20s linear infinite;
+}
+@media screen and (max-width: 576px) {
+  * .king #pics {
+    margin-left: 17px;
+    margin-right: 18px;
+  }
+}
+@keyframes names {
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  * .king {
+    width: auto;
+    display: grid;
+    margin: auto;
+    height: auto;
+    margin-top: -20rem;
+  }
+}
+* footer {
+  background-color: white;
+  float: right;
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+@media screen and (max-width: 576px) {
+  * footer {
+    width: auto;
+    margin-left: 4rem;
+    margin-top: -5rem;
+  }
+}
+* footer h4 {
+  text-align: center;
+  color: #5f1782;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: -150px;
+  margin-right: 65px;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: type 7s steps(30, end) forwards infinite;
+}
+@keyframes type {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 255px;
+  }
+}
+@media screen and (max-width: 576px) {
+  * footer h4 {
+    width: auto;
+  }
+}
+* footer p {
+  margin-top: 7rem;
+}
+* footer #haz {
+  z-index: 10;
+  width: 80px;
+  border: none;
+}
+* footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  margin-top: -2rem;
+}
+@media screen and (max-width: 576px) {
+  * footer {
+    width: auto;
+    display: grid;
+  }
+}/*# sourceMappingURL=style.css.map */
